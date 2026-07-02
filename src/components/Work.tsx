@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal } from "@/components/Reveal";
 
 const SHOW_INDEX_NUMBERS = true;
@@ -86,7 +85,8 @@ export function Work() {
                 </div>
               )}
               <div className="mb-[22px] inline-flex h-[70px] items-center justify-center rounded-[14px] border border-ink/[0.08] bg-white px-5 shadow-[0_8px_22px_-14px_rgba(35,33,28,0.45)]">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={study.logo}
                   alt={study.name}
                   width={study.logoWidth}

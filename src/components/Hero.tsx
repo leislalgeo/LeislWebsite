@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal } from "@/components/Reveal";
 
 export function Hero() {
@@ -36,13 +35,12 @@ export function Hero() {
           <div className="relative ml-auto max-w-[430px]">
             <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[14px] bg-gradient-to-br from-[#e8ddca] to-[#ddd0bd]" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-[14px] shadow-[0_30px_60px_-30px_rgba(35,33,28,0.35)]">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/headshot.png"
                 alt="Leisl Algeo"
-                fill
-                priority
-                sizes="(min-width: 1320px) 430px, 40vw"
-                className="object-cover"
+                loading="eager"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
           </div>

@@ -1,9 +1,6 @@
 [build]
-  command = "next build --webpack"
-  publish = ".next"
+  command = "npm run build"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "22"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"

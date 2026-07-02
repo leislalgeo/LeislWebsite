@@ -26,11 +26,12 @@ export function Contact() {
     setStatus("submitting");
 
     try {
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encodeForm(new FormData(form)),
       });
+      if (!response.ok) throw new Error(`Form submission failed: ${response.status}`);
       setStatus("success");
       form.reset();
     } catch {

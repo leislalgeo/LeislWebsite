@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   title: "Leisl Algeo — Builder. Founder. Operator.",
   description:
     "Leisl Algeo works with founders and leaders building something new — organisations that need someone who can hold the vision and build the thing at the same time.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

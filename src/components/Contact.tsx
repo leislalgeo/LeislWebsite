@@ -53,8 +53,10 @@ export function Contact() {
             The first step is a conversation.
           </h2>
           <p className="mt-[26px] max-w-[44ch] font-body text-[clamp(16px,1.7vw,18.5px)] font-normal leading-[1.65] text-on-dark-muted">
-            If you think there might be a fit — a real problem, an honest
-            team, a mostly-blank page — tell me what you&apos;re building.
+            If you think my skillset could be useful in the work you&apos;re
+            doing — a real problem, an enthusiastic team and a mostly blank
+            page — tell me what you&apos;re building and we can bring that to
+            life.
           </p>
           <div className="mt-[clamp(32px,4vw,44px)]">
             <a

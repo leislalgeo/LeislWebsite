@@ -19,9 +19,11 @@ export function Hero() {
             Strategy is just a story. I make it real.
           </p>
           <p className="mt-[22px] max-w-[47ch] font-body text-[clamp(16px,1.7vw,18.5px)] leading-[1.62] text-muted-2">
-            I work with founders and leaders building something new —
-            organisations that need someone who can hold the vision and build
-            the thing at the same time.
+            The thing that gets me up in the morning is building the
+            operational framework for something new. I find founders and
+            leaders who are doing exciting things that will fundamentally
+            make the world a better place, and I hold the why whilst
+            building the how, at the same time.
           </p>
           <a
             href="#contact"
@@ -38,7 +40,7 @@ export function Hero() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/headshot.png"
-                alt="Leisl Algeo"
+                alt="Leisl Algeo, fractional COO and startup builder"
                 loading="eager"
                 className="absolute inset-0 h-full w-full object-cover"
               />

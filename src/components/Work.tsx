@@ -11,7 +11,7 @@ const caseStudies = [
     logoWidth: 44,
     logoHeight: 44,
     description:
-      "I started Launchpad because the kind of early childhood education I believed in didn't exist in the communities I was working in. I built three multilingual Montessori preschools from the ground up — finding the spaces, hiring the teachers, writing the curriculum, managing the finances, and keeping the doors open. I found the capital to grow the business and had a successful exit. It taught me how to take an idea and turn it into a living, breathing organisation.",
+      "I started Launchpad because I had two young children and the kind of early childhood education that I wanted for them didn't exist yet. So I spent some time travelling the globe and finding best practice in the US and the UK, and ended up building three multilingual Montessori preschools from the ground up. I found the properties, built out inspirational classrooms, co-designed new curriculums, managed the hiring and finances and built the customer base up. I also raised capital for us to grow and ultimately, had a successful exit.",
   },
   {
     index: "02",
@@ -21,7 +21,7 @@ const caseStudies = [
     logoWidth: 72,
     logoHeight: 42,
     description:
-      "GoTyme was one of the first fully digital banks in South Africa, and I joined at the moment when the product existed but the growth engine didn't. I hired and managed a team of 50 Tyme Ambassadors deployed across the country, and was part of the team that took the bank from zero customers to over a million in under two years. At the core of it was a simple human belief — that financial access and literacy shouldn't be a privilege. Helping build something that made that real for people, inside a fast-moving commercial environment, is where I understood that purpose and profit don't have to pull in opposite directions.",
+      "GoTyme Bank is the first phygital bank in South Africa, a digital bank that had a physical presence in Pick n Pay and Boxer stores. I joined as the company came out of Deloitte where it was consulting to the global telco, MTN on a mobile money offering. Within a matter of months, I hired a team of 50 Tyme Ambassadors and deployed them across the country. We were part of the team that took the bank from zero to a million customers in just over a year. What I loved about this role was the dream that the founding team held and ultimately achieved: that financial access and literacy shouldn't be a privilege, but that we could make it real for millions of underbanked South Africans. Helping build something so deeply impactful inside such a fast-moving commercial environment helped me see that purpose and profit can be achieved at the same time.",
   },
   {
     index: "03",
@@ -31,7 +31,7 @@ const caseStudies = [
     logoWidth: 140,
     logoHeight: 36,
     description:
-      "ALA has over 1,000 alumni across the globe — young Africans who left the continent to study and build skills, and who want to come back and make a meaningful contribution. My job was to build the system that made that possible: a network of internships and career opportunities, sourced across the continent, that gave alumni a real pathway home. Delivering that against a Mastercard Foundation grant meant holding two things at once — the rigour that a funder of that scale expects, and a programme that actually worked for the people it was designed to serve. That balance is something I've carried into every role since.",
+      "ALA has over 1,000 alumni living across the globe. These are young Africans who left the continent to study and build skills that could be brought back home to build Africa. My job was to build a system to make that possible: a network of internships and career opportunities, sourced across the continent, that gave alumni a real pathway home. This programme was done with a Mastercard Foundation grant which taught me to have the rigour that a funder of that scale expects whilst delivering a programme that actually worked for the people it was designed to serve. Achieving that balance has been something I've carried with me ever since.",
   },
   {
     index: "04",
@@ -41,7 +41,7 @@ const caseStudies = [
     logoWidth: 62,
     logoHeight: 46,
     description:
-      "Dalza is a mobile platform connecting parents, teachers, and practitioners around children with neurodivergent needs. I've just come into the business and I'm in the work of understanding what's been built, where the gaps are, and what the organisation needs to move from early traction to sustainable growth. My mandate is to build the operational infrastructure and go-to-market foundations that give the product — and the team — the best possible chance of making a lasting difference for the families who need it.",
+      "Once again, my experience as a mother has led me to a purpose-driven role: working as a fractional COO for a tech startup for children with neurodivergent needs. It's a new role where I'm digging in to understand what's been built, where the gaps are and what the organisation needs to move from proof of concept to sustainable growth. I'm focusing on building the operational infrastructure and go-to-market strategy that give the product, and the team, the best possible chance of making a lasting difference for the families who need it the most.",
   },
 ];
 
@@ -88,7 +88,7 @@ export function Work() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={study.logo}
-                  alt={study.name}
+                  alt={`${study.name} logo`}
                   width={study.logoWidth}
                   height={study.logoHeight}
                   className="block h-auto w-auto"

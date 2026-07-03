@@ -18,11 +18,20 @@ const siteUrl = "https://www.leislalgeo.com";
 const ogDescription =
   "I work with founders and leaders building something new — organisations that need someone who can hold the vision and build the thing at the same time.";
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Leisl Algeo",
+  jobTitle: "Fractional COO",
+  url: siteUrl,
+  sameAs: ["https://www.linkedin.com/in/leislalgeo"],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Leisl Algeo — Builder. Founder. Operator.",
+  title: "Leisl Algeo | Builder. Founder. Operator. | Fractional COO",
   description:
-    "Leisl Algeo works with founders and leaders building something new — organisations that need someone who can hold the vision and build the thing at the same time.",
+    "Leisl Algeo is a fractional COO and startup builder working with founders and for-purpose organisations at the intersection of strategy and execution. Based in Cape Town.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -67,7 +76,13 @@ export default function RootLayout({
       lang="en"
       className={`${schibstedGrotesk.variable} ${hankenGrotesk.variable}`}
     >
-      <body className="bg-warm-white text-ink antialiased">{children}</body>
+      <body className="bg-warm-white text-ink antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

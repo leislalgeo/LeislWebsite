@@ -52,6 +52,9 @@ export const metadata: Metadata = {
     description: ogDescription,
     images: [`${siteUrl}/og-image.png`],
   },
+  verification: {
+    google: "PASTE YOUR CODE HERE",
+  },
 };
 
 export default function RootLayout({
